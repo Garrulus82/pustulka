@@ -533,3 +533,19 @@ a {
     width: 100%;
   }
 }
+
+/* Panoramiczne zdjęcie miodów pod kartami w sekcji Jakość i doświadczenie */
+.quality-panorama {
+  grid-column: 1 / -1;      /* zajmuje szerokość dwóch kontenerów wyżej */
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.quality-panorama img {
+  width: 100%;
+  height: auto;             /* pokazuje całe zdjęcie, bez sztucznego przycinania */
+  display: block;
+}
