@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+      <title id="title">Analiza miodu</title>
+      <desc id="desc">miejsce na zdjęcie z laboratorium</desc>
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#dcecf2"/>
+          <stop offset="1" stop-color="#fff8e8"/>
+        </linearGradient>
+      </defs>
+      <rect width="800" height="520" fill="url(#g)"/>
+      <circle cx="90" cy="85" r="70" fill="#ffffff" opacity="0.28"/>
+      <circle cx="730" cy="90" r="120" fill="#ffffff" opacity="0.23"/>
+      
+        <rect x="110" y="285" width="590" height="34" rx="12" fill="#ffffff" opacity="0.92"/>
+        <rect x="190" y="125" width="92" height="180" rx="18" fill="#ffffff" stroke="#9db8c2" stroke-width="5"/>
+        <rect x="207" y="152" width="58" height="126" rx="10" fill="#dcecf2"/>
+        <path d="M390 128 h185 a24 24 0 0 1 24 24 v114 a24 24 0 0 1 -24 24 H390 z" fill="#ffffff" stroke="#9db8c2" stroke-width="5"/>
+        <path d="M420 243 C455 210 490 263 525 230 C545 212 565 215 585 232" fill="none" stroke="#f3c970" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="660" cy="210" r="34" fill="#f8e5ad"/>
+        <circle cx="150" cy="225" r="24" fill="#f2d6cf"/>
+        
+      <text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2f342c">Analiza miodu</text>
+      <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" fill="#6c715f">miejsce na zdjęcie z laboratorium</text>
+    </svg>

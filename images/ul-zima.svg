@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+      <title id="title">Zima</title>
+      <desc id="desc">ule zimą</desc>
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#dcecf2"/>
+          <stop offset="1" stop-color="#fbfaf6"/>
+        </linearGradient>
+      </defs>
+      <rect width="800" height="520" fill="url(#g)"/>
+      <circle cx="90" cy="85" r="70" fill="#ffffff" opacity="0.28"/>
+      <circle cx="730" cy="90" r="120" fill="#ffffff" opacity="0.23"/>
+      
+        <rect x="145" y="250" width="310" height="142" rx="18" fill="#fffaf0" stroke="#9db8c2" stroke-width="5"/>
+        <rect x="170" y="218" width="260" height="55" rx="16" fill="#dcecf2" opacity="0.9"/>
+        <path d="M80 395 C205 345 365 430 520 372 C620 336 710 365 775 328" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.95"/>
+        <circle cx="602" cy="142" r="6" fill="#ffffff"/><circle cx="655" cy="188" r="5" fill="#ffffff"/><circle cx="540" cy="214" r="4" fill="#ffffff"/><circle cx="705" cy="245" r="5" fill="#ffffff"/>
+        
+      <text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2f342c">Zima</text>
+      <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" fill="#6c715f">ule zimą</text>
+    </svg>

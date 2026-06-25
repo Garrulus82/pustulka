@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ciekawostki o miodzie, pszczołach i jakości produktów pszczelich." />
+  <title>Ciekawostki | Pasieka Pustułka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    To jest przykładowa podstrona, którą możesz wykorzystać później.
+    Na początku możesz jej nie używać. Jeżeli chcesz ją włączyć w menu strony głównej,
+    wejdź do index.html i odkomentuj link:
+    <a href="ciekawostki.html">Ciekawostki</a>
+  -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Główne menu">
+      <a class="logo" href="index.html#start">
+        <span class="logo-mark">✦</span>
+        <span>Pasieka Pustułka</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#o-pasiece">O pasiece</a>
+        <a href="index.html#jakosc">Jakość</a>
+        <a href="index.html#miody">Miody</a>
+        <a href="index.html#galeria">Galeria</a>
+        <a href="index.html#kontakt" class="nav-button">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-pad hero">
+      <div class="container section-heading narrow">
+        <p class="eyebrow">Ciekawostki</p>
+        <h1>Wiedza o miodzie i pszczołach</h1>
+        <p class="lead">
+          Tutaj możesz dodawać krótkie, przystępne teksty o miodzie, pszczołach, jakości produktów pszczelich i analizie żywności.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container cards three-cards">
+        <!--
+          Jak dodać nowy wpis:
+          1. Skopiuj cały blok <article class="knowledge-card">...</article>.
+          2. Zmień tytuł w <h3>.
+          3. Zmień tekst w <p>.
+          4. Jeżeli wpis ma mieć osobną stronę, link w <a> może prowadzić np. do hmf.html.
+        -->
+        <article class="knowledge-card">
+          <h3>Czym jest HMF?</h3>
+          <p>
+            HMF jest jednym ze związków, którego zawartość może wzrastać podczas ogrzewania lub długiego przechowywania miodu. Dlatego bywa traktowany jako jeden ze wskaźników jakości.
+          </p>
+          <a href="index.html#jakosc" class="read-more">Wróć do sekcji jakości</a>
+        </article>
+
+        <article class="knowledge-card">
+          <h3>Dlaczego miód krystalizuje?</h3>
+          <p>
+            Krystalizacja jest naturalnym procesem. Nie oznacza pogorszenia jakości miodu. Jej tempo zależy m.in. od składu cukrów i temperatury przechowywania.
+          </p>
+          <a href="index.html#kontakt" class="read-more">Zapytaj o miód</a>
+        </article>
+
+        <article class="knowledge-card">
+          <h3>Jak przechowywać miód?</h3>
+          <p>
+            Najlepiej trzymać go szczelnie zamkniętego, w suchym i zacienionym miejscu, bez nadmiernego ogrzewania. Lodówka zwykle nie jest potrzebna.
+          </p>
+          <a href="index.html" class="read-more">Strona główna</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Pasieka Pustułka.</p>
+      <p>Krótko i rzetelnie o miodzie.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pasieka Pustułka – niewielka pasieka prowadzona z pasji do pszczół, przyrody i jakości miodu." />
+  <title>Pasieka Pustułka</title>
+
+  <!--
+    Plik stylów strony.
+    Jeżeli zmienisz nazwę pliku style.css, popraw także ścieżkę poniżej.
+  -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    ===== NAGŁÓWEK I MENU =====
+    Menu jest proste i działa na zasadzie linków do sekcji na tej samej stronie.
+    Przykład: href="#o-pasiece" przenosi do sekcji <section id="o-pasiece">.
+
+    Gdy w przyszłości dodasz osobną podstronę z ciekawostkami, możesz zmienić:
+    <a href="#wiedza">Ciekawostki</a>
+    na:
+    <a href="ciekawostki.html">Ciekawostki</a>
+  -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Główne menu">
+      <a class="logo" href="#start" aria-label="Przejdź do początku strony">
+        <span class="logo-mark">✦</span>
+        <span>Pasieka Pustułka</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Pokaż lub ukryj menu" onclick="document.body.classList.toggle('menu-open')">
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a href="#o-pasiece">O pasiece</a>
+        <a href="#jakosc">Jakość</a>
+        <a href="#miody">Miody</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#wiedza">Ciekawostki</a>
+        <!--
+          Przyszła podstrona:
+          1. Utwórz plik ciekawostki.html.
+          2. Usuń komentarz z linku poniżej.
+          3. Możesz wtedy usunąć link <a href="#wiedza">Ciekawostki</a> powyżej.
+        -->
+        <!-- <a href="ciekawostki.html">Ciekawostki</a> -->
+        <a href="#kontakt" class="nav-button">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="start">
+    <!--
+      ===== SEKCJA GŁÓWNA / HERO =====
+      Tutaj najlepiej wstawić dobre zdjęcie pasieki, uli albo pszczół.
+      Aktualnie użyty jest plik zastępczy: images/pasieka-hero.svg.
+
+      Aby użyć własnego zdjęcia:
+      1. Wgraj zdjęcie do folderu images, np. images/pasieka.jpg.
+      2. Zmień src="images/pasieka-hero.svg" na src="images/pasieka.jpg".
+      3. Zmień opis alt tak, aby krótko opisywał zdjęcie.
+    -->
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Niewielka pasieka prowadzona z pasją</p>
+          <h1>Miód z pasieki, w której najważniejsze są pszczoły, przyroda i jakość.</h1>
+          <p class="lead">
+            Pasieka Pustułka to kameralna pasieka położona w otoczeniu lasu i okolicznych pożytków. Nie jest przedsięwzięciem nastawionym na masową produkcję miodu. Powstała z podziwu dla pszczół, ciekawości przyrody i potrzeby pracy w rytmie sezonu.
+          </p>
+          <div class="hero-actions">
+            <a href="#o-pasiece" class="button primary">Poznaj pasiekę</a>
+            <a href="#kontakt" class="button secondary">Zapytaj o miód</a>
+          </div>
+        </div>
+
+        <figure class="hero-image card-soft">
+          <img src="images/pasieka-hero.svg" alt="Ule w spokojnym, jasnym krajobrazie" />
+          <figcaption>Pasieka prowadzona w małej skali, z dbałością o zdrowie rodzin pszczelich.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!--
+      ===== O PASIECE =====
+      W tej sekcji możesz dopisać:
+      - dokładniejszą lokalizację, jeżeli chcesz ją podać,
+      - od kiedy prowadzisz pasiekę,
+      - liczbę rodzin pszczelich,
+      - krótką historię powstania pasieki.
+
+      Unikaj podawania dokładnej lokalizacji uli, jeśli nie chcesz jej publicznie ujawniać.
+    -->
+    <section id="o-pasiece" class="section-pad section-light">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow">O pasiece</p>
+          <h2>Mała skala, spokojna gospodarka i szacunek do pszczół.</h2>
+          <p>
+            Pasieka Pustułka powstała z pasji do przyrody i pszczelarstwa. Pszczoły fascynują mnie nie tylko jako producenci miodu, ale przede wszystkim jako niezwykle zorganizowane i ważne dla środowiska owady.
+          </p>
+          <p>
+            Nie dążę do maksymalizacji produkcji. Najważniejsze są dla mnie zdrowe rodziny pszczele, poszanowanie naturalnego cyklu ich rozwoju oraz jakość pozyskiwanego miodu. Miód jest efektem ubocznym dobrej opieki nad pszczołami, a nie celem osiąganym za wszelką cenę.
+          </p>
+          <p>
+            Pasieka znajduje się w otoczeniu lasu „Pustułka” i okolicznych pól, dzięki czemu pszczoły korzystają z różnorodnych pożytków. To miejsce sprzyja obserwacji przyrody i prowadzeniu pasieki w niewielkiej, spokojnej skali.
+          </p>
+        </div>
+
+        <aside class="info-box">
+          <h3>Co jest dla mnie ważne?</h3>
+          <ul class="check-list">
+            <li>zdrowie rodzin pszczelich,</li>
+            <li>higiena pozyskiwania i rozlewu miodu,</li>
+            <li>rzetelna informacja o produkcie,</li>
+            <li>mała skala i sezonowa dostępność,</li>
+            <li>podziw dla pszczół i przyrody.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!--
+      ===== KWALIFIKACJE, NAUKA I ANALIZA MIODU =====
+      To jest miejsce na delikatne pokazanie Twojego doświadczenia naukowego.
+      Ton jest celowo spokojny, aby nie brzmiało to górnolotnie.
+
+      Możesz dodać zdjęcia:
+      - przygotowania próbki miodu,
+      - aparatu HPLC/UHPLC,
+      - chromatogramu,
+      - stanowiska laboratoryjnego.
+
+      Pamiętaj: jeśli na zdjęciu widać osoby, zapytaj je o zgodę na publikację.
+    -->
+    <section id="jakosc" class="section-pad">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Jakość i doświadczenie</p>
+          <h2>Pszczelarstwo połączone z wiedzą o jakości żywności.</h2>
+          <p>
+            Pszczelarstwo jest moją pasją, którą rozwijam praktycznie, prowadząc własną pasiekę, oraz zawodowo, zajmując się analizą żywności. Jestem technikiem pszczelarzem, a od ponad 20 lat pracuję w obszarze analizy żywności w Instytucie Technologii i Analizy Żywności Politechniki Łódzkiej. W pracy naukowej zajmuję się również badaniami dotyczącymi jakości miodu.
+          </p>
+          <p>
+            To doświadczenie pomaga mi patrzeć na miód nie tylko jak na tradycyjny produkt pszczeli, ale także jak na żywność, której jakość zależy od pochodzenia, sposobu pozyskania, przechowywania i uczciwej informacji przekazywanej odbiorcy.
+          </p>
+        </div>
+
+        <div class="quality-grid">
+          <article class="quality-card card-soft">
+            <img src="images/analiza-hplc.svg" alt="Symboliczne przedstawienie analizy miodu w laboratorium" />
+            <div>
+              <h3>Analiza miodu</h3>
+              <p>
+                W pracy zawodowej zajmuję się m.in. oceną składu i jakości żywności. Wybrane badania miodu mogą obejmować oznaczenia wykonywane metodami chromatograficznymi i spektroskopowymi.
+              </p>
+            </div>
+          </article>
+
+          <article class="quality-card card-soft">
+            <img src="images/probki-miodu.svg" alt="Słoiki i próbki miodu przygotowane do analizy" />
+            <div>
+              <h3>Rzetelna informacja</h3>
+              <p>
+                Na stronie unikam przesadnych obietnic zdrowotnych. Wolę prosty opis pochodzenia, sezonowości, cech miodu i zasad jego właściwego przechowywania.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ===== MIODY / PRODUKTY =====
+      Tutaj wpisz tylko te miody, które faktycznie masz w danym sezonie.
+      Jeżeli czegoś nie ma, możesz dopisać: „chwilowo niedostępny” albo usunąć kartę.
+
+      Nie dodawaj medycznych obietnic typu „leczy”, „wzmacnia odporność”, „działa przeciwzapalnie”.
+      Bezpieczniej pisać o smaku, aromacie, krystalizacji i pochodzeniu.
+    -->
+    <section id="miody" class="section-pad section-light">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Miody</p>
+          <h2>Dostępność zależy od sezonu i pożytków.</h2>
+          <p>
+            W małej pasiece ilość miodu jest ograniczona, a jego charakter zależy od pogody, terminu kwitnienia roślin i siły rodzin pszczelich. Dlatego dostępność poszczególnych miodów może zmieniać się z roku na rok.
+          </p>
+        </div>
+
+        <div class="cards three-cards">
+          <article class="product-card">
+            <span class="product-icon">✺</span>
+            <h3>Miód wielokwiatowy</h3>
+            <p>
+              Miód o zróżnicowanym, sezonowym charakterze. Jego smak i aromat zależą od roślin kwitnących w okolicy pasieki w danym okresie.
+            </p>
+            <p class="availability">Dostępność: sezonowa</p>
+          </article>
+
+          <article class="product-card">
+            <span class="product-icon">☼</span>
+            <h3>Miód lipowy</h3>
+            <p>
+              Miód pozyskiwany wtedy, gdy warunki pogodowe pozwolą pszczołom dobrze wykorzystać pożytek lipowy. Zwykle ma wyraźniejszy aromat i charakterystyczny smak.
+            </p>
+            <p class="availability">Dostępność: zależna od roku</p>
+          </article>
+
+          <article class="product-card">
+            <span class="product-icon">✿</span>
+            <h3>Inne miody z pasieki</h3>
+            <p>
+              W zależności od sezonu mogą pojawić się miody o odmiennym profilu pożytkowym. Informację o aktualnej dostępności najlepiej potwierdzić bezpośrednio.
+            </p>
+            <p class="availability">Dostępność: zapytaj</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ===== GALERIA =====
+      W tej części możesz dodać zdjęcia pasieki i uli.
+      Aktualnie użyte są pliki zastępcze SVG.
+
+      Jak podmienić zdjęcie:
+      1. Wgraj zdjęcie do folderu images, np. ul-wiosna.jpg.
+      2. Zmień src="images/ul-wiosna.svg" na src="images/ul-wiosna.jpg".
+      3. Zmień alt="..." na krótki opis zdjęcia.
+
+      Proponowane zdjęcia:
+      - ule wiosną,
+      - ule latem,
+      - ule jesienią,
+      - ule zimą,
+      - praca przy ulu,
+      - rozlew miodu,
+      - słoiki z miodem,
+      - zdjęcie z laboratorium/analizy miodu.
+    -->
+    <section id="galeria" class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Galeria</p>
+          <h2>Pasieka w rytmie czterech pór roku.</h2>
+          <p>
+            Pszczelarstwo uczy cierpliwości i obserwacji. Każda pora roku w pasiece wygląda inaczej: od wiosennego rozwoju rodzin, przez letnie pożytki, po jesienne przygotowanie do zimy i zimowy spokój uli.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/ul-wiosna.svg" alt="Ule wiosną" />
+            <figcaption>Wiosna – rozwój rodzin i pierwsze intensywne loty.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/ul-lato.svg" alt="Ule latem" />
+            <figcaption>Lato – czas pożytków i pracy pszczół w pełni sezonu.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/ul-jesien.svg" alt="Ule jesienią" />
+            <figcaption>Jesień – przygotowanie rodzin pszczelich do zimowli.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/ul-zima.svg" alt="Ule zimą" />
+            <figcaption>Zima – spokój w pasiece i oczekiwanie na kolejny sezon.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ===== CIEKAWOSTKI / WIEDZA O MIODZIE =====
+      To jest sekcja na tej samej stronie.
+      W przyszłości możesz przenieść ją do osobnego pliku ciekawostki.html.
+
+      Dobre tematy krótkich wpisów:
+      - czym jest HMF i dlaczego bada się go w miodzie,
+      - dlaczego miód krystalizuje,
+      - jak przechowywać miód,
+      - czym jest analiza pyłkowa miodu,
+      - dlaczego nie należy mocno podgrzewać miodu,
+      - jak powstaje miód.
+
+      Każdy wpis trzymaj krótki: 150–300 słów.
+    -->
+    <section id="wiedza" class="section-pad section-light">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Ciekawostki</p>
+          <h2>Krótko, prosto i rzetelnie o miodzie.</h2>
+          <p>
+            W tej części można zamieszczać krótkie informacje o miodzie, pszczołach i jakości produktów pszczelich. Chcę łączyć doświadczenie pszczelarskie z wiedzą z zakresu analizy żywności, unikając przesadnych obietnic i uproszczeń.
+          </p>
+        </div>
+
+        <div class="cards three-cards">
+          <article class="knowledge-card">
+            <h3>Dlaczego miód krystalizuje?</h3>
+            <p>
+              Krystalizacja jest naturalną cechą wielu miodów. Jej szybkość zależy m.in. od składu cukrów, temperatury przechowywania i pochodzenia nektaru.
+            </p>
+            <a href="#kontakt" class="read-more">Zapytaj o aktualny miód</a>
+          </article>
+
+          <article class="knowledge-card">
+            <h3>Czym jest HMF?</h3>
+            <p>
+              HMF, czyli 5-hydroksymetylofurfural, jest związkiem, którego zawartość w miodzie może wzrastać podczas ogrzewania lub długiego przechowywania. Dlatego bywa oznaczany jako jeden ze wskaźników jakości miodu.
+            </p>
+            <a href="#jakosc" class="read-more">Zobacz sekcję jakości</a>
+          </article>
+
+          <article class="knowledge-card">
+            <h3>Jak przechowywać miód?</h3>
+            <p>
+              Miód najlepiej przechowywać szczelnie zamknięty, w suchym i zacienionym miejscu, z dala od źródeł ciepła. Nie wymaga lodówki.
+            </p>
+            <a href="#kontakt" class="read-more">Masz pytanie?</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ===== KONTAKT =====
+      Wpisz swoje aktualne dane kontaktowe.
+      Możesz dodać telefon, e-mail, Facebook albo link do mapy z przybliżoną lokalizacją.
+
+      Jeżeli nie chcesz podawać numeru telefonu, usuń odpowiednią linię.
+      Jeżeli nie chcesz podawać dokładnego adresu, zostaw tylko miejscowość lub okolicę.
+    -->
+    <section id="kontakt" class="section-pad contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Zapytaj o aktualną dostępność miodu.</h2>
+          <p>
+            Ilość miodu z małej pasieki jest ograniczona, dlatego dostępność najlepiej potwierdzić bezpośrednio. Chętnie odpowiem także na pytania dotyczące pasieki, pochodzenia miodu i sposobu jego przechowywania.
+          </p>
+        </div>
+
+        <address class="contact-card">
+          <strong>Pasieka Pustułka</strong>
+          <!-- W poniższych liniach wpisz własne dane kontaktowe. -->
+          <span>Okolice lasu „Pustułka”, powiat brzeziński</span>
+          <span>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></span>
+          <span>E-mail: <a href="mailto:kontakt@pasiekapustulka.pl">kontakt@pasiekapustulka.pl</a></span>
+          <!-- Jeżeli masz Facebooka, odkomentuj i uzupełnij link. -->
+          <!-- <span>Facebook: <a href="https://facebook.com/twoj-profil">profil pasieki</a></span> -->
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!--
+    ===== STOPKA =====
+    Możesz dopisać numer weterynaryjny/rejestracyjny dopiero wtedy, gdy będzie nadany
+    i będziesz chciał go publicznie pokazać.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Pasieka Pustułka. Wszystkie prawa zastrzeżone.</p>
+      <p>Mała pasieka, pszczoły i miód w rytmie natury.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Automatyczne wpisanie aktualnego roku w stopce.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

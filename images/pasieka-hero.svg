@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+      <title id="title">Pasieka Pustułka</title>
+      <desc id="desc">miejsce na główne zdjęcie pasieki</desc>
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#f8e5ad"/>
+          <stop offset="1" stop-color="#eaf1e6"/>
+        </linearGradient>
+      </defs>
+      <rect width="800" height="520" fill="url(#g)"/>
+      <circle cx="90" cy="85" r="70" fill="#ffffff" opacity="0.28"/>
+      <circle cx="730" cy="90" r="120" fill="#ffffff" opacity="0.23"/>
+      
+        <rect x="120" y="250" width="300" height="145" rx="18" fill="#fffaf0" stroke="#c8d8c2" stroke-width="5"/>
+        <rect x="145" y="220" width="250" height="55" rx="16" fill="#c8d8c2" opacity="0.75"/>
+        <rect x="155" y="292" width="230" height="22" rx="8" fill="#f3c970" opacity="0.7"/>
+        <rect x="155" y="330" width="230" height="22" rx="8" fill="#f3c970" opacity="0.5"/>
+        <circle cx="290" cy="370" r="10" fill="#725100"/>
+        <path d="M90 405 C180 365 305 430 445 390 C555 360 655 385 760 348" fill="none" stroke="#91a684" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+        <circle cx="615" cy="182" r="34" fill="#fff8d4" opacity="0.85"/>
+        
+      <text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2f342c">Pasieka Pustułka</text>
+      <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" fill="#6c715f">miejsce na główne zdjęcie pasieki</text>
+    </svg>
